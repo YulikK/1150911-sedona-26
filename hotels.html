@@ -23,7 +23,54 @@
 
       <section>
         <h2>Фильтр</h2>
-        <!--Здесь будет фильтр-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+
+          <div class="">
+            <fieldset>
+              <legend>Инфраструктура</legend>
+              <ul>
+                <li>
+                  <input id="filter-swimmingpull" type="checkbox" name="swimmingpull" checked>
+                  <label for="filter-swimmingpull">Бассейн</label>
+                </li>
+                <li>
+                  <input id="filter-parcking" type="checkbox" name="parcking">
+                  <label for="filter-parcking">Парковка</label>
+                </li>
+                <li>
+                  <input id="filter-wifi" type="checkbox" name="wifi">
+                  <label for="filter-wifi">wi-fi</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset>
+              <legend>Тип жилья</legend>
+              <ul>
+                <li>
+                  <input id="filter-hotel" type="checkbox" name="hotel" checked>
+                  <label for="filter-hotel">гостиница</label>
+                </li>
+                <li>
+                  <input id="filter-motel" type="checkbox" name="motel" checked>
+                  <label for="filter-motel">мотель</label>
+                </li>
+                <li>
+                  <input id="filter-apartment" type="checkbox" name="apartment" checked>
+                  <label for="filter-apartment">апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="">
+            <p>Стоимость в сутки (Р)</p>
+            <div class="">
+              <!--Здесь будет хитрый range-->
+            </div>
+            <button type="submit" name="show">Показать</button>
+          </div>
+        </form>
       </section>
 
       <section>
@@ -33,7 +80,7 @@
 
       <section>
 
-          <h2>Отобранные варианты</h2>
+          <h2 class="visually-hidden">Отобранные варианты</h2>
 
           <ul>
             <li>
