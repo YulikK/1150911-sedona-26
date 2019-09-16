@@ -110,21 +110,33 @@
             <div class="">
               <label for="search-date-in">Дата заезда</label>
               <input id="search-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
-              <img src="img/calendar.svg" alt="Открыть окно подбора даты заезда">
+              <button type="button" name="button-date-in" >
+                <img src="img/calendar.svg" alt="Открыть окно подбора даты заезда">
+              </button>
             </div>
 
             <div class="">
               <label for="search-date-out">Дата выезда</label>
               <input id="search-date-out" type="text" name="date-out" placeholder="4 июля 2017">
-              <img src="img/calendar.svg" alt="Открыть окно подбора даты выезда">
+              <button type="button" name="button-date-out" >
+                <img src="img/calendar.svg" alt="Открыть окно подбора даты выезда">
+              </button>
             </div>
 
             <div class="">
-              <label for="search-adult">Взрослые</label>
-              <input id="search-adult" type="number" name="adult" placeholder="2">
+              <div class="">
+                <label for="search-adult">Взрослые</label>
+                <button type="button" name="adult-min" aria-label="Уменьшить количество взрослых">-</button>
+                <input id="search-adult" type="number" name="adult" placeholder="2">
+                <button type="button" name="adult-max" aria-label="Увеличить количество взрослых">+</button>
+              </div>
 
-              <label for="search-children">Дети</label>
-              <input id="search-children" type="number" name="children" placeholder="0">
+              <div class="">
+                <label for="search-children">Дети</label>
+                <button type="button" name="children-min" aria-label="Уменьшить количество детей">-</button>
+                <input id="search-children" type="number" name="children" placeholder="0">
+                <button type="button" name="children-max" aria-label="Увеличить количество детей">+</button>
+              </div>
             </div>
 
           <button type="submit" name="search">Найти</button>
