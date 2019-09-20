@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
         <a>
-          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
+          <img class="logo" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
         </a>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+        <ul class="navigation-list">
+          <li><a class="navigation-item" href="#">Информация</a></li>
+          <li><a class="navigation-item" href="#">Фото и видео</a></li>
+          <li><a class="navigation-item" href="#">Карта штата</a></li>
+          <li><a class="navigation-item" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
 
-      <div class="">
+      <div class="welcome">
         <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Седону">
       </div>
 
 
-      <div>
+      <div class="information">
 
         <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
 
@@ -38,14 +41,16 @@
       <section>
 
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul>
-          <li>
-            <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <ul class="advantages">
+          <li class="main-advantages">
+            <div class="main-advantages-item">
+              <h3>Настоящий городок</h3>
+              <p>— №1 —</p>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="img/photo-1.jpg" width="800" height="401" alt="Фото города">
 
-            <ul>
+            <ul class="advantages-description">
               <li>
                 <img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
                 <h4>Жилье</h4>
@@ -67,36 +72,36 @@
             </ul>
           </li>
           <li>
-            <h3>Там есть мост дьявола</h3>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="main-advantages-item">
+              <h3>Там есть мост дьявола</h3>
+              <p>— №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
             <img src="img/photo-2.jpg" width="800" height="400" alt="Фото местности">
           </li>
 
-          <li>
+          <li class="advantages-item">
             <h3>Небольшая площадь</h3>
             <p>— №3 —</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
 
-          <li>
+          <li  class="advantages-item">
             <h3>Красивая дорога</h3>
             <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
-          <li>
+          <li  class="advantages-item">
             <h3>Мало туристов</h3>
             <p>— №5 —</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
-
-
         </ul>
 
       </section>
 
-      <section>
+      <section class="reserve">
 
         <h2>Заинтересовались?</h2>
 
@@ -104,58 +109,61 @@
           Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button type="button" name="open-form-search">Поиск гостиницы в седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <button class="open-form" type="button" name="open-form-search">Поиск гостиницы в седоне</button>
+        <div>
 
-            <div class="">
-              <label for="search-date-in">Дата заезда</label>
-              <input id="search-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
-              <button type="button" name="button-date-in" >
-                <img src="img/calendar.svg" alt="Открыть окно подбора даты заезда">
-              </button>
-            </div>
+          <form class="form-reservation" action="https://echo.htmlacademy.ru" method="post">
 
-            <div class="">
-              <label for="search-date-out">Дата выезда</label>
-              <input id="search-date-out" type="text" name="date-out" placeholder="4 июля 2017">
-              <button type="button" name="button-date-out" >
-                <img src="img/calendar.svg" alt="Открыть окно подбора даты выезда">
-              </button>
-            </div>
-
-            <div class="">
               <div class="">
-                <label for="search-adult">Взрослые</label>
-                <button type="button" name="adult-min" aria-label="Уменьшить количество взрослых">-</button>
-                <input id="search-adult" type="number" name="adult" placeholder="2">
-                <button type="button" name="adult-max" aria-label="Увеличить количество взрослых">+</button>
+                <label for="search-date-in">Дата заезда</label>
+                <input class="input-date" id="search-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
+                <button class="calendar" type="button" name="button-date-in" >
+                  <img src="img/calendar.svg" alt="Открыть окно подбора даты заезда">
+                </button>
               </div>
 
               <div class="">
-                <label for="search-children">Дети</label>
-                <button type="button" name="children-min" aria-label="Уменьшить количество детей">-</button>
-                <input id="search-children" type="number" name="children" placeholder="0">
-                <button type="button" name="children-max" aria-label="Увеличить количество детей">+</button>
+                <label for="search-date-out">Дата выезда</label>
+                <input  class="input-date" id="search-date-out" type="text" name="date-out" placeholder="4 июля 2017">
+                <button class="calendar" type="button" name="button-date-out" >
+                  <img src="img/calendar.svg" alt="Открыть окно подбора даты выезда">
+                </button>
               </div>
-            </div>
 
-          <button type="submit" name="search">Найти</button>
-        </form>
+              <div class="">
+                <div class="">
+                  <label for="search-adult">Взрослые</label>
+                  <button class="button-count minus" type="button" name="adult-min" aria-label="Уменьшить количество взрослых"></button>
+                  <input class="input-count" id="search-adult" type="number" name="adult" placeholder="2">
+                  <button class="button-count plus" type="button" name="adult-max" aria-label="Увеличить количество взрослых"></button>
+                </div>
+
+                <div class="">
+                  <label for="search-children">Дети</label>
+                  <button class="button-count minus" type="button" name="children-min" aria-label="Уменьшить количество детей"></button>
+                  <input class="input-count" id="search-children" type="number" name="children" placeholder="0">
+                  <button class="button-count plus" type="button" name="children-max" aria-label="Увеличить количество детей"></button>
+                </div>
+              </div>
+
+            <button class="search" type="submit" name="search">Найти</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
 
-        <p>
+        <p class="hashtag">
           #visitsedona
         </p>
 
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">Youtube</a></li>
+          <li><a class="social-button twitter" href="#"></a></li>
+          <li><a class="social-button facebook" href="#"></a></li>
+          <li><a class="social-button youtube" href="#"></a></li>
         </ul>
 
-        <p>
+        <p class="copyright">
           Website by
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo_academy.svg" width="115" height="41" alt="Разработчик сайта">
