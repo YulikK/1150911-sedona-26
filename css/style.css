@@ -180,7 +180,8 @@ background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
-::placeholder {
+.input-date::placeholder,
+.input-count::placeholder{
     color: #000000;
 }
 
