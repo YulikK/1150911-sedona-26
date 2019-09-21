@@ -12,22 +12,22 @@ body{
   background-color: #f2f2f2;
 }
 
-.logo{
-  background-color: #81b3d3;
-}
 .navigation-list{
   list-style: none;
   background-color: #ffffff;
 }
+
 .navigation-item {
   color: #000000;
   text-decoration: none;
   font-weight: 700;
 }
+
 .navigation-item:hover,
 .navigation-item:focus{
   color: #81b3d2;
 }
+
 .navigation-item:active{
   color: #000000;
   opacity: 0.3;
@@ -41,24 +41,25 @@ body{
   background-color: #a9a9a9;
   background-image: url("../img/polygon.svg"), url("../img/background.jpg");
   background-position: center bottom, center center;
-  background-width: 1201px, 1200px;
-  background-height: 59px, 800px;
   background-repeat: no-repeat;
 }
+
 .information{
   background-color: #ffffff;
 }
-h1{
+
+.main-head{
   color: #000000;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   background-color: #ffffff;
 }
+
 .advantages,
 .advantages-item,
 .advantages-description,
-footer ul,
+.footer ul,
 .form-filter ul,
 .hotels-list{
   list-style: none;
@@ -68,10 +69,12 @@ footer ul,
   color: #ffffff;
   background-color: #81b3d2;
 }
+
 .advantages-description,
 .hotels-list{
   background-color: #ffffff;
 }
+
 .advantages-item{
   background-color: #eeeeee;
 }
@@ -95,6 +98,24 @@ background-color: #ffffff;
   color: #000000;
 }
 
+.hotels::before{
+  content: url("../img/icon-1.svg");
+  width: 75px;
+  height: 72px;
+}
+
+.eats::before{
+  content: url("../img/icon-2.svg");
+  width: 75px;
+  height: 72px;
+}
+
+.presents::before{
+  content: url("../img/icon-3.svg");
+  width: 75px;
+  height: 72px;
+}
+
 .reserve h2{
   color: #000000;
   font-size: 30px;
@@ -108,13 +129,12 @@ background-color: #ffffff;
 
 .form-reservation{
   width: 568px;
-  height: 395px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
 }
+
 .open-form{
   width: 568px;
-  height: 86px;
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
@@ -139,7 +159,8 @@ background-color: #ffffff;
   font-weight: 700;
 }
 
-input{
+.input-date,
+.input-count{
   background-color: #f2f2f2;
   border: none;
   font-size: 14px;
@@ -148,52 +169,117 @@ input{
   line-height: 26px;
 }
 
-input:hover{
+.input-date:hover,
+.input-count:hover{
   background-color: #ebebeb;
 }
-input:focus{
+
+.input-date:focus,
+.input-count:focus{
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
-::placeholder { /* Firefox, Chrome, Opera */
+::placeholder {
     color: #000000;
-  }
+}
+
 .input-date{
   width: 346px;
-  height: 38px;
 }
 
 .input-count{
   width: 38px;
-  height: 38px;
 }
 
-.calendar,
-.button-count{
+.form-reservation button{
   background-color: #f2f2f2;
   border: none;
 }
 
-.button-count{
+.form-reservation label{
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.calendar{
+  fill: #cacaca;
+}
+
+.calendar:hover,
+.calendar:focus{
+  fill: #000000;
+}
+
+.calendar:active{
+  fill: #81b3d2;
+}
+
+.button-count-minus{
   width: 38px;
   height: 38px;
-  background-color: #f2f2f2;
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.minus{
-  background-image: url("../img/minus.png");
+  position: relative;
+  margin: 5px;
 }
 
-.plus{
-  background-image: url("../img/plus.png");
+.button-count-minus::after{
+  content: "";
+  width: 12px;
+  height: 3px;
+  position: absolute;
+  left: calc(50% - 6px);
+  top: calc(50% - 1.5px);
+  background: #a9a9a9;
 }
 
-.search{
+.button-count-plus{
+  width: 38px;
+  height: 38px;
+  position: relative;
+  margin: 5px;
+}
+
+.button-count-plus::after{
+  content: "";
+  width: 11px;
+  height: 3px;
+  position: absolute;
+  left: calc(50% - 5.5px);
+  top: calc(50% - 1.5px);
+  background: #a9a9a9;
+}
+
+.button-count-plus::before{
+  content: "";
+  width: 3px;
+  height: 11px;
+  position: absolute;
+  left: calc(50% - 1.5px);
+  top: calc(50% - 5.5px);
+  background: #a9a9a9;
+}
+
+.button-count-minus:hover::after,
+.button-count-plus:hover::after,
+.button-count-plus:hover::before,
+.button-count-minus:focus::after,
+.button-count-plus:focus::after,
+.button-count-plus:focus::before
+{
+  background-color: #000000;
+}
+
+.button-count-minus:active::after,
+.button-count-plus:active::after,
+.button-count-plus:active::before
+{
+  background-color: #81b3d2;
+}
+
+.form-reservation .search{
   width: 458px;
-  height: 58px;
   background-color: #81b3d2;
 
   color: #ffffff;
@@ -228,6 +314,7 @@ input:focus{
     color: #000000;
     opacity: 0.3;
 }
+
 .hotels-list .button{
   color: #ffffff;
   font-weight: 700;
@@ -237,7 +324,7 @@ input:focus{
 
 .info{
   width: 110px;
-  height: 27px;
+
   background-color: #81b3d2;
   padding-left: 17px;
   padding-right: 17px;
@@ -258,7 +345,6 @@ input:focus{
 
 .order{
   width: 142px;
-  height: 27px;
   background-color: #766357;
   padding-left: 16px;
   padding-right: 16px;
@@ -270,16 +356,22 @@ input:focus{
 .order:focus{
   background-color: #604e43;
 }
+
 .order:active{
   color: #ffffff;
   opacity: 0.3;
   background-color: #503e33;
 }
-.rating p{
+
+.rating{
   width: 110px;
-  height: 27px;
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.stars{
+  width: 18px;
+  content: url("../img/star.svg");
 }
 
 footer{
@@ -298,6 +390,7 @@ footer{
   background-color: #81b3d2;
   margin: 6px;
 }
+
 .twitter{
   width: 17px;
   height: 15px;
@@ -321,6 +414,7 @@ footer{
   padding-top: 13px;
   padding-bottom: 13px;
 }
+
 .youtube{
   width: 20px;
   height: 16px;
@@ -336,6 +430,7 @@ footer{
 .copyright{
   color: #000000;
 }
+
 .copyright a{
   width: 115px;
   height: 41px;
@@ -362,6 +457,7 @@ footer{
   border: none;
   text-align: left;
 }
+
 .form-filter button{
   color: #ffffff;
   font-size: 14px;
@@ -370,7 +466,6 @@ footer{
   text-transform: uppercase;
 
   width: 133px;
-  height: 32px;
   border: 2px solid #ffffff;
   background-color: Transparent;
 }

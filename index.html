@@ -11,7 +11,7 @@
     <header>
       <nav>
         <a>
-          <img class="logo" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
         </a>
         <ul class="navigation-list">
           <li><a class="navigation-item" href="#">Информация</a></li>
@@ -30,7 +30,7 @@
 
       <div class="information">
 
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="main-head">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
 
         <p>
           Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
@@ -51,20 +51,17 @@
             <img src="img/photo-1.jpg" width="800" height="401" alt="Фото города">
 
             <ul class="advantages-description">
-              <li>
-                <img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+              <li class="hotels">
                 <h4>Жилье</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
 
-              <li>
-                <img src="img/icon-2.svg" width="75" height="72" alt="Еда">
+              <li class="eats">
                 <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
 
-              <li>
-                <img src="img/icon-3.svg" width="64" height="76" alt="Сувениры">
+              <li class="presents">
                 <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
@@ -117,8 +114,28 @@
               <div class="">
                 <label for="search-date-in">Дата заезда</label>
                 <input class="input-date" id="search-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
-                <button class="calendar" type="button" name="button-date-in" >
-                  <img src="img/calendar.svg" alt="Открыть окно подбора даты заезда">
+                <button type="button" name="button-date-in" >
+                  <svg  class="calendar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" aria-label="Открыть окно подбора даты заезда">
+                    <g>
+                      <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+		                    c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+		                    c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+		                    C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+		                    c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+		                    c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+		                    v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+	                    <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+	                    <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+	                    <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+	                    <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+	                    <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+	                    <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+	                    <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+	                    <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+	                    <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+                    </g>
+                  </svg>
                 </button>
               </div>
 
@@ -126,23 +143,43 @@
                 <label for="search-date-out">Дата выезда</label>
                 <input  class="input-date" id="search-date-out" type="text" name="date-out" placeholder="4 июля 2017">
                 <button class="calendar" type="button" name="button-date-out" >
-                  <img src="img/calendar.svg" alt="Открыть окно подбора даты выезда">
+                  <svg  class="calendar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" aria-label="Открыть окно подбора даты выезда">
+                    <g>
+                      <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+		                    c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+		                    c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+		                    C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+		                    c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+		                    c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+		                    v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+	                    <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+	                    <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+	                    <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+	                    <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+	                    <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+	                    <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+	                    <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+	                    <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+	                    <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+                    </g>
+                  </svg>
                 </button>
               </div>
 
               <div class="">
                 <div class="">
                   <label for="search-adult">Взрослые</label>
-                  <button class="button-count minus" type="button" name="adult-min" aria-label="Уменьшить количество взрослых"></button>
+                  <button class="button-count-minus" type="button" name="adult-min" aria-label="Уменьшить количество взрослых"></button>
                   <input class="input-count" id="search-adult" type="number" name="adult" placeholder="2">
-                  <button class="button-count plus" type="button" name="adult-max" aria-label="Увеличить количество взрослых"></button>
+                  <button class="button-count-plus" type="button" name="adult-max" aria-label="Увеличить количество взрослых"></button>
                 </div>
 
                 <div class="">
                   <label for="search-children">Дети</label>
-                  <button class="button-count minus" type="button" name="children-min" aria-label="Уменьшить количество детей"></button>
+                  <button class="button-count-minus" type="button" name="children-min" aria-label="Уменьшить количество детей"></button>
                   <input class="input-count" id="search-children" type="number" name="children" placeholder="0">
-                  <button class="button-count plus" type="button" name="children-max" aria-label="Увеличить количество детей"></button>
+                  <button class="button-count-plus" type="button" name="children-max" aria-label="Увеличить количество детей"></button>
                 </div>
               </div>
 
@@ -151,8 +188,7 @@
         </div>
       </section>
     </main>
-    <footer>
-
+    <footer class="footer">
         <p class="hashtag">
           #visitsedona
         </p>
