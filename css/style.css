@@ -325,10 +325,7 @@ background-color: #ffffff;
 
 .container-form{
   background-image: url("../img/map.jpg");
-  background;
-  /* align-items: stretch; */
-  /* background-image: url("../img/background-hotel.jpg"); */
-}
+  }
 
 .hotel-name{
     color: #000000;
