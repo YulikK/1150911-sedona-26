@@ -18,7 +18,7 @@
           <li><a class="navigation-item" href="#">Информация</a></li>
           <li><a class="navigation-item" href="#">Фото и видео</a></li>
           <li><a class="navigation-item" href="#">Карта штата</a></li>
-          <li><a class="navigation-item nav_current">Гостиницы</a></li>
+          <li><a class="navigation-item navigation-item-current">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -31,21 +31,30 @@
         <h2 class="visually-hidden">Фильтр</h2>
         <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
 
-          <div class="filter-checkbox">
+          <div class="filters">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul class="filter-list">
                 <li>
-                  <input id="filter-swimmingpull" class="visually-hidden filter-input-checkbox filter-input-checked" type="checkbox" name="swimmingpull" checked>
-                  <label for="filter-swimmingpull">Бассейн</label>
+                  <label for="filter-swimmingpull" class="filter-checkbox">
+                    <input id="filter-swimmingpull" class="visually-hidden" type="checkbox" name="swimmingpull" checked>
+                    <span class="checkbox-indicator"></span>
+                    Бассейн
+                  </label>
                 </li>
                 <li>
-                  <input id="filter-parcking" class="visually-hidden filter-input-checkbox" type="checkbox" name="parcking">
-                  <label for="filter-parcking">Парковка</label>
+                  <label for="filter-parcking" class="filter-checkbox">
+                    <input id="filter-parcking" class="visually-hidden" type="checkbox" name="parcking">
+                    <span class="checkbox-indicator"></span>
+                    Парковка
+                  </label>
                 </li>
                 <li>
-                  <input id="filter-wifi" class="visually-hidden filter-input-checkbox" type="checkbox" name="wifi">
-                  <label for="filter-wifi">wi-fi</label>
+                  <label for="filter-wifi" class="filter-checkbox">
+                    <input id="filter-wifi" class="visually-hidden" type="checkbox" name="wifi">
+                    <span class="checkbox-indicator"></span>
+                    wi-fi
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -54,16 +63,25 @@
               <legend>Тип жилья:</legend>
               <ul  class="filter-list">
                 <li>
-                  <input id="filter-hotel" class="visually-hidden filter-input-checkbox filter-input-checked" type="checkbox" name="hotel" checked>
-                  <label for="filter-hotel">гостиница</label>
+                  <label for="filter-hotel" class="filter-checkbox">
+                    <input id="filter-hotel" class="visually-hidden" type="checkbox" name="hotel" checked>
+                    <span class="checkbox-indicator"></span>
+                    гостиница
+                  </label>
                 </li>
                 <li>
-                  <input id="filter-motel" class="visually-hidden filter-input-checkbox filter-input-checked" type="checkbox" name="motel" checked>
-                  <label for="filter-motel">мотель</label>
+                  <label for="filter-motel" class="filter-checkbox" class="filter-checkbox">
+                    <input id="filter-motel" class="visually-hidden" type="checkbox" name="motel" checked>
+                    <span class="checkbox-indicator"></span>
+                    мотель
+                  </label>
                 </li>
                 <li>
-                  <input id="filter-apartment" class="visually-hidden filter-input-checkbox filter-input-checked" type="checkbox" name="apartment" checked>
-                  <label for="filter-apartment">апартаменты</label>
+                  <label for="filter-apartment" class="filter-checkbox">
+                    <input id="filter-apartment" class="visually-hidden" type="checkbox" name="apartment" checked>
+                    <span class="checkbox-indicator"></span>
+                    апартаменты
+                  </label>
                 </li>
               </ul>
             </fieldset>
