@@ -263,6 +263,8 @@ img{
   font-weight: 700;
   text-transform: uppercase;
   line-height: 25px;
+  height: 38px;
+  box-sizing: border-box;
 }
 
 .input-date:hover,
@@ -287,7 +289,7 @@ img{
 }
 
 .input-count{
-  width: 10px;
+  width: 38px;
 }
 
 .form-reservation button{
@@ -307,11 +309,13 @@ img{
 .calendar{
   fill: #cacaca;
   position: absolute;
-  padding-right: 8px;
+  /* padding-right: 8px;
   padding-left: 8px;
   padding-top: 9px;
   padding-bottom: 7px;
-  margin-left: 418px;
+  margin-left: 418px; */
+  left: 428px;
+  top: 9px;
 }
 
 .calendar:hover,
@@ -849,6 +853,7 @@ position: relative;
   margin-top: 55px;
   display: flex;
   position: relative;
+  align-items: center;
   /* justify-content: flex-start; */
 }
 
