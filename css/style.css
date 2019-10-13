@@ -1244,6 +1244,7 @@ position: relative;
 .sort-info{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .label-ul,
@@ -1307,6 +1308,8 @@ position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 85px;
+  height: 80px;
+  align-items: center;
 }
 
 .direction{
