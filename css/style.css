@@ -694,6 +694,10 @@ position: relative;
   margin-left: auto;
 }
 
+.navigation-list li:nth-child(4n-2){
+  margin-right: auto;
+}
+
 .navigation-list li{
   text-align: left;
   width: 239px;
@@ -900,6 +904,7 @@ position: relative;
   justify-content: space-around;
   width: 100%;
   min-height: 120px;
+  height: 120px;
 }
 
 .footer-main{
@@ -915,6 +920,7 @@ position: relative;
   margin-bottom: auto;
   width: 400px;
   justify-content: center;
+  align-items: center;
   /* margin-top: 30px;
   margin-bottom: 36px; */
   /* margin-left: 36px; */
@@ -926,6 +932,9 @@ position: relative;
   margin-top: auto;
   margin-bottom: auto;
   width: 400px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .social-button{
