@@ -66,7 +66,7 @@ img{
   background-color: #a9a9a9;
   background-image: url("../img/polygon.svg"), url("../img/background.jpg");
   background-position: center bottom, center -55px;
-  background-size: contain, auto;
+  background-size: 1200px 57px, auto;
   background-repeat: no-repeat;
 }
 
@@ -81,7 +81,7 @@ img{
   line-height: 26px;
   background-color: #ffffff;
 
-  width: 440px;
+  width: 470px;
   margin: 60px auto 27px;
 }
 
@@ -776,12 +776,14 @@ position: relative;
   font-size: 21px;
   line-height: 21px;
   margin: 30px auto 9px;
+  width: 100%;
 }
 
 .advantages-description p{
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  width: 100%;
 }
 
 .other-advantages{
