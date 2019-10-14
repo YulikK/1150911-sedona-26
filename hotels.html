@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="container">
@@ -119,12 +119,12 @@
         </div>
         <div class="direction">
           <a class="direction-sort" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" aria-label="Направление сортировки по-возрастанию">
               <path fill="#231F20" d="M5.5 0L0 10h11z"/>
             </svg>
           </a>
           <a class="direction-sort direction-sort-active" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" aria-label="Направление сортировки по-убыванию">
               <path fill="#231F20" d="M5.5 10L0 0h11"/>
             </svg>
           </a>
@@ -161,7 +161,7 @@
               </div>
             </div>
             <div class="hotels-item-rating">
-              <p class="stars stars-4"></p>
+              <p class="stars stars-4" aria-label="4 звезды"></p>
               <p class="rating">Рейтинг: 8,5</p>
             </div>
 
@@ -190,7 +190,7 @@
               </div>
             </div>
             <div class="hotels-item-rating">
-              <p class="stars stars-3"></p>
+              <p class="stars stars-3" aria-label="3 звезды"></p>
               <p class="rating">Рейтинг: 8,5</p>
             </div>
 
@@ -218,7 +218,7 @@
               </div>
             </div>
             <div class="hotels-item-rating">
-              <p class="stars stars-2"></p>
+              <p class="stars stars-2" aria-label="2 звезды"></p>
               <p class="rating">Рейтинг: 9,2</p>
             </div>
 
@@ -234,9 +234,9 @@
         </p>
 
         <ul class="social">
-          <li><a class="social-button twitter" href="#"></a></li>
-          <li><a class="social-button facebook" href="#"></a></li>
-          <li><a class="social-button youtube" href="#"></a></li>
+          <li class="social-button"><a class="twitter" href="#" aria-label="twitter"></a></li>
+          <li class="social-button"><a class="facebook" href="#" aria-label="facebook"></a></li>
+          <li class="social-button"><a class="youtube" href="#" aria-label="youtube"></a></li>
         </ul>
 
         <p class="copyright">
