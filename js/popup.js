@@ -9,6 +9,10 @@ var storageAdult = "";
 var storageChildren = "";
 var isStorageSupport = true;
 
+if(popup.classList.contains("form-reservation-show")){
+  popup.classList.remove("form-reservation-show");
+}
+
 try{
   storageAdult = localStorage.getItem("adult");
   storageChildren = localStorage.getItem("children");
@@ -24,6 +28,7 @@ link.addEventListener("click", function(evt){
     evt.preventDefault();
     popup.classList.remove("form-reservation-show");
     popup.classList.remove("form-reservation-animation");
+    popup.classList.remove("form-reservation-error");
   }
   else{
     popup.classList.add("form-reservation-show");
@@ -40,6 +45,9 @@ form.addEventListener("submit", function(evt){
   if(!dateIn.value || !dateOut.value || !adult.value){
     evt.preventDefault();
     dateIn.focus();
+    popup.classList.remove("form-reservation-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("form-reservation-error");
   }
   else{
     if(isStorageSupport){
@@ -54,6 +62,8 @@ window.addEventListener("keydown", function(evt){
     if(popup.classList.contains("form-reservation-show")){
       evt.preventDefault();
       popup.classList.remove("form-reservation-show");
+      popup.classList.remove("form-reservation-animation");
+      popup.classList.remove("form-reservation-error");
     }
   }
 })
